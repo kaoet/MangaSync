@@ -25,13 +25,13 @@ public class Main {
 
                 }
             });
-            MangaSource source = new ChuiXue(http);
-            List<Book> books = source.search("我老婆是学生");
+            MangaSource source = new KuKuDm(http);
+            List<Book> books = source.search("我");
             System.out.println(books);
-//            String bookId = books.get(0).id;
-//            List<Chapter> chapters = source.chapters(bookId);
-//            System.out.println(chapters);
-//            System.out.println(source.pages(null, "226602"));
+            String bookId = books.get(0).id;
+            List<Chapter> chapters = source.chapters(bookId);
+            System.out.println(chapters);
+ //           System.out.println(source.pages("1953", "38891"));
         } finally {
             executor.shutdown();
         }

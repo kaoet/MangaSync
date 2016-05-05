@@ -51,7 +51,8 @@ public class MainForm {
                 new ChuiXue(http),
                 new Dm5(http),
                 new Dmzj(http),
-                new TukuCC(http)
+                new TukuCC(http),
+                new KuKuDm(http)
         };
         bookTree.setModel(new DefaultTreeModel(null));
     }
